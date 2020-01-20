@@ -4,7 +4,7 @@ import com.NotGarbage.engine.AbstractGame;
 import com.NotGarbage.engine.GameContainer;
 import com.NotGarbage.engine.Renderer;
 import com.NotGarbage.game.gameStates.GameStateManager;
-import gameStates.LoadingScreen;
+import com.pokemon.gameStates.LoadingScreen;
 
 public class GameManager extends AbstractGame {
 	private GameStateManager gsm;

@@ -4,12 +4,13 @@ import java.util.Stack;
 
 import com.NotGarbage.engine.GameContainer;
 import com.NotGarbage.engine.Renderer;
-//import com.NotGarbage.game.entities.Player;
+import com.pokemon.entities.Player;
+import com.pokemon.gameStates.WorldState;
 
 public class GameStateManager {
 	public Stack<GameState> states;
-	//private Player player;
-	//private Dungeon[] levels;
+	private Player player;
+	private	WorldState[] levels;
 	private Menu[] menus;
 
 	public GameStateManager() {
@@ -27,15 +28,15 @@ public class GameStateManager {
 	public void updatePlayer() {
 		states.peek().updatePlayer();
 	}
-/*
-	public void importLevel(Dungeon dungeon, int spot) {
-		levels[spot] = dungeon;
+
+	public void importLevel(WorldState level, int spot) {
+		levels[spot] = level;
 	}
-*/
+
 	public void importMenu(Menu menu, int spot) {
 		menus[spot] = menu;
 	}
-/*
+
 	public Player getPlayer() {
 		return player;
 	}
@@ -44,14 +45,14 @@ public class GameStateManager {
 		this.player = player;
 	}
 
-	public Dungeon[] getLevels() {
+	public WorldState[] getLevels() {
 		return levels;
 	}
 
-	public void setLevels(Dungeon[] levels) {
+	public void setLevels(WorldState[] levels) {
 		this.levels = levels;
 	}
-*/
+
 	public Menu[] getMenus() {
 		return menus;
 	}
