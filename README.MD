@@ -2,7 +2,7 @@ The Huffman Pokemon Recreation Project:
 
 Some basic commands to help you out in case you forget
   - To compile use sbt compile
-  - To run the game, use sbt
+  - To run the game, use sbt run
   - To push your changes to git
     > git add *
     > git commit -m "some text about your changes"
