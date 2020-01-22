@@ -5,6 +5,7 @@ import com.NotGarbage.engine.gfx.{Image}
 import com.NotGarbage.game.comunicators.{Cordinates}
 import com.NotGarbage.game.gameStates.{GameState, GameStateManager}
 
+//The class that simulates walking around in the overworld
 class WorldState(gsm: GameStateManager) extends GameState(gsm) {
 
   override def update(gc: GameContainer, dt: Float): Unit = {

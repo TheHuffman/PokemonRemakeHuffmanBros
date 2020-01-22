@@ -7,6 +7,8 @@ import com.NotGarbage.game.gameStates.{GameState, GameStateManager, Menu}
 import com.pokemon.entities._
 import com.pokemon.util.{PokemonHolders}
 
+//CONNOR DOES NOT NEED TO TOUCH THIS
+//LOADING IS A GABE ONLY TASK, IS VAUGELY COMPLEX
 class LoadingScreen(gsm: GameStateManager) extends GameState(gsm) {
   val background = new Image("/textures/backgrounds/loadingBackground.png")
   val buttonSheet = new ImageTile("/textures/gui/menu_buttons.png", 100, 25)
