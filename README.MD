@@ -22,6 +22,7 @@ Basic Scala
       pokemon(i) = null
     }
     where i is the index of the array
+    
+var makes a mutable variable, val makes an unmutable one (aka vars can be changed, vals cannot)
 
 I think that is the important stuff, if there is anything else you want me to put here just let me know.
-I'm in as well btw!
