@@ -24,3 +24,4 @@ Basic Scala
     where i is the index of the array
 
 I think that is the important stuff, if there is anything else you want me to put here just let me know.
+I'm in as well btw!
