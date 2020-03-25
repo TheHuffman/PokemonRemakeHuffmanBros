@@ -22,5 +22,8 @@ Basic Scala
       pokemon(i) = null
     }
     where i is the index of the array
+    
+var makes a mutable variable, val makes an unmutable one (aka vars can be changed, vals cannot)
+Classes are the template of an object, which can be assigned to a variable with their type being of that class
 
 I think that is the important stuff, if there is anything else you want me to put here just let me know.
