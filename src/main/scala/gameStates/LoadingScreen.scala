@@ -4,6 +4,7 @@ import com.NotGarbage.engine.{GameContainer, Renderer}
 import com.NotGarbage.engine.gfx.{Image, ImageTile}
 import com.NotGarbage.game.comunicators.{Button}
 import com.NotGarbage.game.gameStates.{GameState, GameStateManager, Menu}
+import com.NotGarbage.game.InputController
 import com.pokemon.entities._
 import com.pokemon.util.{PokemonHolders}
 
@@ -12,6 +13,8 @@ import com.pokemon.util.{PokemonHolders}
 class LoadingScreen(gsm: GameStateManager) extends GameState(gsm) {
   val background = new Image("/textures/backgrounds/loadingBackground.png")
   val buttonSheet = new ImageTile("/textures/gui/menu_buttons.png", 100, 25)
+
+  gsm.controller = new InputController()
 
   override def update(gc: GameContainer, dt: Float): Unit = {
     var bidoof: Pokemon = new Pokemon(399, "Bidoof", "/textures/pokemon/399.png", "/textures/pokemon/399b.png")

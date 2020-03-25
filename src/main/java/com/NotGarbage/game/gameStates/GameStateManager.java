@@ -4,11 +4,14 @@ import java.util.Stack;
 
 import com.NotGarbage.engine.GameContainer;
 import com.NotGarbage.engine.Renderer;
+import com.NotGarbage.game.InputController;
 import com.pokemon.entities.Player;
 import com.pokemon.gameStates.WorldState;
 
 public class GameStateManager {
 	public Stack<GameState> states;
+	public InputController controller;
+
 	private Player player;
 	private	WorldState[] levels;
 	private Menu[] menus;
