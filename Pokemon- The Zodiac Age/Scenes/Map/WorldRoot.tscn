@@ -1,16 +1,63 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/Map/opening_tiles.tres" type="TileSet" id=1]
+[ext_resource path="res://Scenes/Map/opening_doodads.tres" type="TileSet" id=2]
+[ext_resource path="res://Scenes/Map/opening_grass.tres" type="TileSet" id=3]
+[ext_resource path="res://Scenes/Map/opening_barriors.tres" type="TileSet" id=4]
 
 [node name="Root" type="Node2D"]
 
 [node name="Map" type="Node" parent="."]
 
+[node name="Default" type="Node" parent="Map"]
+
+[node name="Tiles" type="TileMap" parent="Map/Default"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+
+[node name="Barriors" type="TileMap" parent="Map/Default"]
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 16, 16 )
+format = 1
+
+[node name="Grass" type="TileMap" parent="Map/Default"]
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 16, 16 )
+collision_layer = 2
+collision_mask = 4
+format = 1
+
+[node name="Doodads" type="TileMap" parent="Map/Default"]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 16, 16 )
+format = 1
+
 [node name="Rotute1" type="Node" parent="Map"]
 
+[node name="Tiles" type="TileMap" parent="Map/Rotute1"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+
 [node name="Barriors" type="TileMap" parent="Map/Rotute1"]
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 16, 16 )
 format = 1
 
 [node name="Grass" type="TileMap" parent="Map/Rotute1"]
+cell_size = Vector2( 16, 16 )
+collision_layer = 2
+collision_mask = 4
 format = 1
 
 [node name="Doodads" type="TileMap" parent="Map/Rotute1"]
+cell_size = Vector2( 16, 16 )
+format = 1
+
+[node name="Town1" type="Node" parent="Map"]
+
+[node name="Tiles" type="TileMap" parent="Map/Town1"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
 format = 1
