@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=26 format=2]
+[gd_resource type="TileSet" load_steps=27 format=2]
 
 [ext_resource path="res://Sprites/Tilesets/opening_doodads.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Tilesets/house_tiles.png" type="Texture" id=2]
@@ -65,9 +65,12 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 points = PoolVector2Array( 48, 64, 0, 64, 0, 0, 48, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=21]
-points = PoolVector2Array( 144, 64, 0, 64, 0, 0, 144, 0 )
+points = PoolVector2Array( 48, 48, 0, 48, 0, 0, 48, 0 )
 
 [sub_resource type="ConvexPolygonShape2D" id=22]
+points = PoolVector2Array( 144, 64, 0, 64, 0, 0, 144, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=23]
 points = PoolVector2Array( 48, 96, 0, 96, 0, 16, 48, 16 )
 
 [resource]
@@ -186,14 +189,14 @@ points = PoolVector2Array( 48, 96, 0, 96, 0, 16, 48, 16 )
 5/navigation_offset = Vector2( 0, 0 )
 5/shape_offset = Vector2( 0, 0 )
 5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-5/shape = SubResource( 21 )
+5/shape = SubResource( 22 )
 5/shape_one_way = false
 5/shape_one_way_margin = 1.0
 5/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 21 ),
+"shape": SubResource( 22 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 5/z_index = 0
@@ -249,14 +252,14 @@ points = PoolVector2Array( 48, 96, 0, 96, 0, 16, 48, 16 )
 9/navigation_offset = Vector2( 0, 0 )
 9/shape_offset = Vector2( 0, 0 )
 9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-9/shape = SubResource( 22 )
+9/shape = SubResource( 23 )
 9/shape_one_way = false
 9/shape_one_way_margin = 1.0
 9/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 22 ),
+"shape": SubResource( 23 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 9/z_index = 0
@@ -771,3 +774,24 @@ points = PoolVector2Array( 48, 96, 0, 96, 0, 16, 48, 16 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 39/z_index = 0
+40/name = "tileset_ver_3__free___by_magiscarf_dbf3bkq.png 40"
+40/texture = ExtResource( 3 )
+40/tex_offset = Vector2( 0, 0 )
+40/modulate = Color( 1, 1, 1, 1 )
+40/region = Rect2( 848, 1104, 48, 48 )
+40/tile_mode = 0
+40/occluder_offset = Vector2( 0, 0 )
+40/navigation_offset = Vector2( 0, 0 )
+40/shape_offset = Vector2( 0, 0 )
+40/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+40/shape = SubResource( 21 )
+40/shape_one_way = false
+40/shape_one_way_margin = 1.0
+40/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 21 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+40/z_index = 0
